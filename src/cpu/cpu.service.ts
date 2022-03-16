@@ -4,5 +4,13 @@ import { PowerService } from '../power/power.service';
 
 @Injectable()
 export class CpuService {
-  constructor(public powerService: PowerService) {}
+  constructor(private powerService: PowerService) {}
+
+  compute(a: number, b: number) {
+    console.info('Drawing 10 watts of power from PowerService');
+
+    this.powerService.supplyPower(10);
+
+    return a + b;
+  }
 }

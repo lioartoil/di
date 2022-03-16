@@ -2,5 +2,5 @@ import { Module } from '@nestjs/common';
 
 import { PowerService } from './power.service';
 
-@Module({ exports: [PowerModule], providers: [PowerService] })
+@Module({ exports: [PowerService], providers: [PowerService] })
 export class PowerModule {}
